@@ -1,14 +1,20 @@
 package WCO.Website.Congklak.Online.Models;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import static java.lang.Math.abs;
 import java.util.Dictionary;
 import java.util.Enumeration;
 
 public class Congklak{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private Dictionary players;
 
     public Congklak(PlayerInGame[] players) {
         for (Player player : players) {
-            this.players.put(player.getUsername(), player);
+            this.players.put(player.username, player);
         }
     }
     public boolean checkEmpty(String player){
@@ -73,14 +79,9 @@ public class Congklak{
         }
         return i == 7;
     }
-    
-    private void GenerateScores(){
-        ////algorithm score
-    }
-    
+
     private GameResult GenerateResult(){
         GameResult result = new GameResult();
-        int highestScore = 0;
         Enumeration<String> keys = players.keys();
         String p = keys.nextElement();
         PlayerInGame p1 = (PlayerInGame)this.players.get(p);
@@ -97,7 +98,6 @@ public class Congklak{
             result.winnerScore = p2.house;
             result.loserScore = p1.house;
         }
-        
         ////insert the player and score variable to result
         return result;
     }
