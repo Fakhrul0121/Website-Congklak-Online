@@ -1,0 +1,343 @@
+
+
+.background {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/bbb.png');
+  background-size: cover; /* Sesuaikan dengan kebutuhan Anda */
+  background-repeat: no-repeat;
+  /* Properti untuk elemen background */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  opacity: 100; /* Atur transparansi sesuai keinginan */
+  
+}
+
+.overlay {
+  /* Properti untuk elemen gambar yang ditumpuk */
+  position:absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+
+.loading .line-box{
+  position:absolute;
+  top: 70%;
+  left: 30%;
+  padding: 2px;
+  width: 40%;
+  height: 20px;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+}
+.loading .line-box .line{
+  height: 20px;
+  border-radius: 10px;
+  background: #6aff00;
+  animation: Loading 2s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes Loading{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.belum{
+  position:absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-30%, -30%);
+
+  
+}
+
+.login .login-box .buton{
+  position:absolute;
+  top: 65%;
+  left: 35%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+}
+.login .login-box .buton .h1{
+  position:absolute;
+  top: -30%;
+  left: 35%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+}
+
+.loginbg {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/login.png');
+  background-size: cover; /* Sesuaikan dengan kebutuhan Anda */
+  background-repeat: no-repeat;
+  /* Properti untuk elemen background */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 100; /* Atur transparansi sesuai keinginan */
+  
+}
+
+.submit .submit-box .btsubmit{
+  position:absolute;
+  top: 78%;
+  left: 35%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+  background: #eeff00;
+ 
+  border-radius: 30px;
+}
+.submit .submit-box .btsubmit .h1{
+  position:absolute;
+  top:-30%;
+  left: 35%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+  
+}
+.logtex{
+  position:absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.table{
+  position:absolute;
+  top: 30%;
+  left: 35%;
+  padding: 2px;
+  width: 80%;
+  height: 80px;
+ 
+}
+.table .tbid{
+  
+  width: 50%;
+  height: 50px;
+  transform: translate(-50%, -20%);
+}
+.table .tbps{
+  width: 50%;
+  height: 50px;
+  transform: translate(-50%, 40%);
+}
+.table{
+  transform: translate(-15%, 10%);
+}
+.homebt{
+  position:absolute;
+  top: 5%;
+  left: 90%;
+}
+
+.homebg {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/homebg.png');
+  background-size: cover; /* Sesuaikan dengan kebutuhan Anda */
+  background-repeat: no-repeat;
+  /* Properti untuk elemen background */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 100; /* Atur transparansi sesuai keinginan */
+  
+}
+.profil{
+  position:absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.nama{
+  position:absolute;
+  top:65%;
+  left: 15%;
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.BP{
+  position:absolute;
+  top:70%;
+  left: 13%;
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.alat{
+  position:absolute;
+  top: 20%;
+  left: 40%;
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.start .start-box .startbt{
+  position:absolute;
+  top: 60%;
+  left: 47%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+  background: #eeff00;
+ 
+  border-radius: 30px;
+}
+.start .start-box .startbt .h1{
+  position:absolute;
+  top:-30%;
+  left: 35%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+}
+.carlaw{
+  position:absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.profilcar{
+  position:absolute;
+  top:20%;
+  left: 15%;
+  z-index: 1;
+ 
+}
+.namacar{
+  position:absolute;
+  top:75%;
+  left: 20%;
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.profilcar2{
+  position:absolute;
+  top:20%;
+  left: 65%;
+  z-index: 1;
+ 
+}
+.namacar2{
+  position:absolute;
+  top:75%;
+  left: 73%;
+  z-index: 1;
+  width: 150px; /* Sesuaikan dengan ukuran gambar Anda */
+  height: 50px; /* Sesuaikan dengan ukuran gambar Anda */
+}
+.vs{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.profilar{
+  position:absolute;
+  top:65%;
+  left: 5%;
+  object-fit: cover;
+}
+.namaar{
+  position:absolute;
+  top:70%;
+  left: 22%;
+}
+.poin1{
+  position:absolute;
+  top:75%;
+  left: 22%;
+}
+.profilar2{
+  position:absolute;
+  top:5%;
+  left: 83%;
+  object-fit: cover;
+}
+.namaar2{
+  position:absolute;
+  top:5%;
+  left: 76%;
+}
+.poin2{
+  position:absolute;
+  top:10%;
+  left: 72%;
+}
+.homebtar{
+  position:absolute;
+  top: 5%;
+  left: 5%;
+}
+.winner{
+  position:absolute;
+  top:-10%;
+  left: 40%;
+  
+}
+.profilwin{
+  position:absolute;
+  top:10%;
+  left: 20%;
+  
+}
+.namawin{
+  position:absolute;
+  top:65%;
+  left: 27%;
+}
+.bonus{
+  position:absolute;
+  top:35%;
+  left: 60%;
+}
+.play .play-box .playbt{
+  position:absolute;
+  top: 60%;
+  left: 47%;
+  padding: 2px;
+  width: 30%;
+  height: 50px;
+  background: #eeff00;
+ 
+  border-radius: 30px;
+}
+.play .play-box .playbt .h1{
+  position:absolute;
+  top: -30%;
+  left: 35%;
+}
